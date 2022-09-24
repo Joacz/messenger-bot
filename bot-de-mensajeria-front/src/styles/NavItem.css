@@ -28,5 +28,5 @@
 }
 
 .active {
-  text-decoration: underline rgba(126, 159, 180, 0.575);
+  color: #00556880;
 }
