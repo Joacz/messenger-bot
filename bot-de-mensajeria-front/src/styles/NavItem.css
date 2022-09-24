@@ -1,0 +1,32 @@
+.nav-link {
+  color: #005568;
+  user-select: none;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 100px;
+
+  transition: .3s ease;
+}
+
+.nav-link:hover {
+  background-color: #f7c77f;
+}
+
+.brand:hover {
+  background-color: #E4EEF4;
+}
+
+.active:hover {
+  background-color: #E4EEF4;
+}
+
+.brand {
+  font-weight: 900;
+  user-select: none;
+}
+
+.active {
+  text-decoration: underline rgba(126, 159, 180, 0.575);
+}
