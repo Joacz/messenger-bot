@@ -1,13 +1,15 @@
 nav {
   width: 100%;
   display: flex;
-  justify-content: start;
+  height: 10vh;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   background: #E4EEF4;
 }
 
 ul {
+  margin-left: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

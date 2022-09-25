@@ -1,0 +1,113 @@
+:root {
+  --col1: #005568;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: var(--col1);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-principal {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 40px;
+}
+
+.titulo {
+  margin-bottom: 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.titulo p,
+h1 {
+  font-family: 'Roboto Serif', serif;
+  text-shadow: 3px 4px .3em black;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  padding: 5px 0 5px 0;
+  margin: 15px 0 15px 0;
+  font-family: 'Inter';
+}
+
+.contenedor-titulo {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor-categoria,
+.contenedor-usuarios {
+  box-shadow: 3px 4px 1em rgba(0, 0, 0, 0.747);
+  overflow-y: auto;
+}
+
+.contenedor-categoria {
+  width: 100%;
+  border-radius: 5px;
+  height: 600px;
+  background: #f1f2f3;
+}
+
+.contenedor-usuarios {
+  width: 100%;
+  border-radius: 5px;
+  height: 500px;
+  background: #f1f2f3;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a1a2a3;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .contenedor-principal {
+    flex-wrap: wrap-reverse;
+  }
+}

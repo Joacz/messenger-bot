@@ -6,7 +6,7 @@
   padding: 10px;
   font-size: 20px;
   border-radius: 100px;
-
+  font-family: 'Inter';
   transition: .3s ease;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .brand {
-  font-weight: 900;
+  font-weight: bolder;
   user-select: none;
 }
 
