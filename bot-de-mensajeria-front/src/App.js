@@ -2,6 +2,8 @@ import './App.css';
 import Nav from './components/Nav';
 import NavItem from './components/NavItem';
 import User from './components/User';
+import Mensaje from './components/Mensaje';
+import Categoria from './components/Categoria';
 
 function App() {
   return (
@@ -14,11 +16,31 @@ function App() {
           INICIO
         </NavItem>
         <NavItem isActivo={false} isBrand={false} href='/categorias'>
-          CATEGORIAS
+          CREAR
         </NavItem>
       </Nav>
       <div className='contenedor-principal'>
-        <div className='contenedor-categoria'></div>
+        <div className='contenedor-categorias'>
+          <div className='contenedor-titulo-categorias'>
+            <h2>MENSAJES</h2> <h2>CATEGORIAS</h2>
+          </div>
+          <div className='contenedor-mensaje'>
+            <Mensaje contenido={'Hola ¿cómo andás?'} />
+            <Categoria nombre={'Informales'} />
+          </div>
+          <div className='contenedor-mensaje'>
+            <Mensaje contenido={'Hola, Disculpe si molesto...'} />
+            <Categoria nombre={'Formales'} />
+          </div>
+          <div className='contenedor-mensaje'>
+            <Mensaje contenido={'Te quiero mucho'} />
+            <Categoria nombre={'Amor'} />
+          </div>
+          <div className='contenedor-mensaje'>
+            <Mensaje contenido={'Hola grupo!'} />
+            <Categoria nombre={'Grupales'} />
+          </div>
+        </div>
         <div className='contenedor-titulo'>
           <div className='titulo'>
             <h1>Bienvenido/a</h1>

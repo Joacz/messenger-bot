@@ -1,0 +1,24 @@
+.mensaje,
+.categoria {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  margin: 15px;
+  padding: 15px;
+  background: #e1e2e3;
+  border-radius: 5px;
+  font-family: 'Roboto Serif';
+  font-size: 1.1em;
+}
+
+.categoria {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: 'Roboto Mono';
+}
+
+.categoria span {
+  text-transform: uppercase;
+}

@@ -28,6 +28,7 @@ body {
 }
 
 .titulo {
+  user-select: none;
   margin-bottom: 20px;
   width: 100%;
   color: #fff;
@@ -51,6 +52,7 @@ h1 {
 
 h2 {
   width: 100%;
+  color: #005568;
   text-align: center;
   font-size: 23px;
   padding: 5px 0 5px 0;
@@ -66,13 +68,25 @@ h2 {
   flex-direction: column;
 }
 
-.contenedor-categoria,
+.contenedor-categorias,
 .contenedor-usuarios {
   box-shadow: 3px 4px 1em rgba(0, 0, 0, 0.747);
   overflow-y: auto;
+  user-select: none;
 }
 
-.contenedor-categoria {
+.contenedor-titulo-categorias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.contenedor-titulo-categorias h2 {
+  font-family: 'Inter';
+}
+
+.contenedor-categorias {
   width: 100%;
   border-radius: 5px;
   height: 600px;
@@ -84,6 +98,12 @@ h2 {
   border-radius: 5px;
   height: 500px;
   background: #f1f2f3;
+}
+
+.contenedor-mensaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Works on Firefox */

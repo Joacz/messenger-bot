@@ -33,7 +33,7 @@ function User({ name, email, isAdmin }) {
         </div>
         <div className='separator'></div>
         <div className='user-actions'>
-          <button className='button'>Perfil</button>
+          <button className='button'>Editar</button>
         </div>
       </div>
     );
